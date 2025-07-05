@@ -12,7 +12,7 @@ collection = db['payloads']
 def home():
     return render_template('index.html')
 
-@app.route('/webhook/receiver', methods=['POST'])
+@app.route('/webhook-repo/receiver', methods=['POST'])
 def webhook_receiver():
     data = request.json
     if data:
