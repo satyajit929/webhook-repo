@@ -38,12 +38,12 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
 
       b) Create a cluster and user.
 
-      c) Replace the Mongo URI in main.py:
+      c) Replace the Mongo URI in app.py:
 
           uri = "mongodb+srv://<username>:<password>@cluster1.mongodb.net/?retryWrites=true&w=majority"
    4. Run Flask Server :
 
-          python main.py
+          python app.py
    5. Deploy to AWS EC2 :
 
       a) Launch an EC2 instance.
