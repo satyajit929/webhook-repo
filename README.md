@@ -1,8 +1,8 @@
-Webhook Integration with GitHub using Flask and MongoDB
+# Webhook Integration with GitHub using Flask and MongoDB
 
 This project demonstrates how to set up a Webhook to receive GitHub events using Flask, store the data in MongoDB Atlas, and deploy it on an AWS EC2 instance.
 
-1) Technologies Used :
+## Technologies Used :
 
    a) Python 
 
@@ -14,7 +14,7 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
 
    e) Git & GitHub
 
-2) Project Structure :
+## Project Structure :
    
        webhook-repo/
        ├── main.py              # Flask app to receive GitHub events
@@ -23,7 +23,7 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
        │   └── workflows/
        │       └── webhook.yml  # GitHub Actions workflow
 
-3) Setup Instructions :
+## Setup Instructions :
    
    1. Clone the Repository -
 
@@ -40,11 +40,13 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
 
       c) Replace the Mongo URI in app.py:
 
-          uri = "mongodb+srv://<username>:<password>@cluster1.mongodb.net/?retryWrites=true&w=majority"
+             uri = "mongodb+srv://<username>:<password>@cluster1.mongodb.net/?retryWrites=true&w=majority"
+         
    4. Run Flask Server :
 
           python app.py
-   5. Deploy to AWS EC2 :
+      
+   6. Deploy to AWS EC2 :
 
       a) Launch an EC2 instance.
 
@@ -56,7 +58,7 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
 
       e) Open port 5000 or 80 in EC2 security group.
 
-4) Webhook Setup in GitHub
+## Webhook Setup in GitHub
 
    1. Go to your GitHub repository ➝ Settings ➝ Webhooks ➝ Add Webhook
 
@@ -68,7 +70,7 @@ This project demonstrates how to set up a Webhook to receive GitHub events using
 
    5. Click Add Webhook
 
-5) Features
+## Features
 
    1. Receives real-time GitHub event data.
 
